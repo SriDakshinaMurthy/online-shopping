@@ -1,7 +1,6 @@
 package net.kzn.onlineshopping.controller;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -29,7 +28,7 @@ public class PageController {
 		return mv;
 		}*/
 	
-	@RequestMapping(value = "/test/{greeting}")
+	/* @RequestMapping(value = "/test/{greeting}")
 	public ModelAndView test(@PathVariable("greeting")String greeting)
 	{
 		if (greeting == null) {
@@ -38,6 +37,6 @@ public class PageController {
 		ModelAndView mv = new ModelAndView("page");
 		mv.addObject("greeting", greeting);
 		return mv;
-		}
+		} */
 	
 }
